@@ -1,0 +1,1 @@
+analyze @scraper.py and create a refactoring plan to increase code quality, readability, and comment coverage

@@ -1,0 +1,1 @@
+add an extensive test suite using pytest and make sure all tests pass

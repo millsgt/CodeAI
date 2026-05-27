@@ -1,0 +1,27 @@
+I need to design a notification system for my application.
+
+Requirements:
+- Support multiple channels: Email, SMS, Push
+- Multiple providers per channel:
+  - Email: SendGrid, AWS SES
+  - SMS: Twilio, AWS SNS
+  - Push: FCM, APNS
+- Features:
+  - Retry logic for failures
+  - Rate limiting per user
+  - Template management
+  - User preferences (opt-in/out per channel)
+  - Delivery tracking
+  - Analytics and metrics
+  - Priority levels (normal, high, urgent)
+  - Scheduled notifications
+
+Constraints:
+- Must handle 10,000 notifications/hour
+- 99.9% delivery reliability
+- < 1 second latency for urgent
+- Cost-effective
+- Easy to add new providers
+- Scalable horizontally
+
+Design a robust architecture for this system.

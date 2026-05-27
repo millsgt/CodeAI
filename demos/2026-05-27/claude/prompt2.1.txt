@@ -1,0 +1,1 @@
+yes, but save the refactored code as a new file called @scraper_new.py

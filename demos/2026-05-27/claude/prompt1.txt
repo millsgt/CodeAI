@@ -1,0 +1,24 @@
+@auth/jwt_handler.py
+
+Create middleware that uses this JWT handler:
+
+File: auth/middleware.py
+
+Create:
+- @require_auth decorator
+- Extract user_id from token
+- Add user_id to Flask g object
+- Handle errors:
+  - Missing Authorization header (401)
+  - Invalid token format (401)
+  - Expired token (401)
+  - Include proper JSON error responses
+
+Example usage:
+@app.route('/protected')
+@require_auth
+def protected():
+    user_id = g.user_id
+    return {'message': f'Hello user {user_id}'}
+
+Create the file.
